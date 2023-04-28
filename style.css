@@ -3,7 +3,17 @@
 }
 
 #timer {
+  margin: 0 auto;
+  width: 320px;
+  height: 60px;
+  border: 2px dotted red;
   color: red;
   font-weight: bold;
   font-size: 42px;
+}
+
+button {
+  margin: 30px;
+  width: 90px;
+  height: 30px;
 }

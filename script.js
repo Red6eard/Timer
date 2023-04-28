@@ -39,5 +39,8 @@ function start() {
 
 //функция остановки таймера
 function stop () {
-  
+  if (started) {
+    document.getElementById('timer').innerHTML = 0 + ':' + 00
+  };
+  started = false;
 }
