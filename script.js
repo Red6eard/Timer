@@ -1,5 +1,5 @@
 // на сколько минут ставим таймер
-var count = 5;
+var count = 1;
 // запущен таймер или нет
 started = false;
 
@@ -38,3 +38,6 @@ function start() {
 };
 
 //функция остановки таймера
+function stop () {
+  
+}
