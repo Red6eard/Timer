@@ -1,7 +1,14 @@
 // на сколько минут ставим таймер
-var count = 1;
+var count = 0;
 // запущен таймер или нет
 started = false;
+
+// установка стартового значения
+function submitCount() {
+  count = +document.getElementById("input").value;
+  document.getElementById("timer").innerHTML = count + ":00";
+};
+
 
 // запуск таймера по кнопке
 function start() {
@@ -47,6 +54,9 @@ function stop () {
   }
 };
 
-
-// установка стартового значения
-
+//функция сброса таймера на ноль
+function reset () {
+  count = 0;
+  started = false;
+  document.getElementById("timer").innerHTML = count + ":00";
+}
