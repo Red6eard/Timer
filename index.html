@@ -9,9 +9,16 @@
 
   <body>
     <div class="wrap">
+      <h1>ТАЙМЕР</h1>
       <p id="timer"></p>
-      <button onclick="start()">Start timer</button>
-      <button onclick="stop()">Stop timer</button>
+      <button class="startStop" onclick="start()">Старт</button>
+      <button class="startStop" onclick="reset()">Сброс</button>
+      <button class="startStop" onclick="stop()">Стоп</button>
+      <div>
+        <input type="text" id="input" placeholder="Стартовое значение"/>
+        <button class="startStop submit" onclick="submitCount">Отправить</button>
+        <p></p>
+      </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
   </body>
