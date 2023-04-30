@@ -26,12 +26,15 @@ function start() {
     // отправляем значение таймера на страницу в нужный раздел
     document.getElementById("timer").innerHTML = min + ":" + sec;
     // если время вышло
-    if (remain < 0) {
+    if (remain < 0 ) {
       // останавливаем отсчёт
       clearInterval(countdown);
       // пишем текст вместо цифр
       document.getElementById("timer").innerHTML = "Всё!";
+    }else if(started === false){
+      clearInterval(countdown);
     }
+    
   }, 1000);
   // помечаем, что таймер уже запущен
   started = true;
@@ -40,7 +43,6 @@ function start() {
 //функция остановки таймера
 function stop () {
   if (started) {
-    document.getElementById('timer').innerHTML = 0 + ':' + 00
-  };
-  started = false;
-}
+    started = false;
+  }
+};
